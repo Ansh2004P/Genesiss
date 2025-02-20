@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/utils/mousePosition/mousePosition.js", "src/components/UI/withAnimation"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/utils/mousePosition/mousePosition.js", "src/components/UI/withAnimation", "src/utils/Lists/AboutList/About.js"],
   "exclude": ["node_modules"]
 }

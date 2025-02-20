@@ -20,17 +20,17 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="fixed bottom-14 left-0 right-0 z-50 my-0 mx-auto flex w-[306px] items-center justify-center gap-1 rounded-lg bg-[#07070a]/90 px-1 py-1 text-[#e4ded7] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px]">
+        <nav className="fixed bottom-14 left-0 right-0 z-50 my-0 mx-auto flex w-[306px] items-center justify-center gap-1 rounded-lg bg-[#07070a]/90 text-[#e4ded7] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px]">
 
             <IconLink 
                 id="view-resume"
-                style="py-2 px-2 text-[20px] sm:px-4 md:py-2" 
+                style="py-1 px-1 text-[16px] sm:px-4 md:py-1" 
                 color="white" ariaLabel="resume-Icon navbar" 
                 href="https://drive.google.com/file/d/1Xf6bTE8tKGeF_1lzUbpaEivpo4hF1LdG/view?usp=sharing" 
                 icon={faFilePdf} />
 
             <Magnetic>
-                <button aria-label="Scroll-to-Home" className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[15px] md:py-1 md:px-4" onClick={() => scrollToSection("hero")}>
+                <button aria-label="Scroll-to-Home" className="rounded py-1 px-2 sm:px-4 text-[12px] sm:text-[15px] md:px-4 cursor-none" onClick={() => scrollToSection("hero")}>
                     <h3>
                         Home
                     </h3>
@@ -38,7 +38,7 @@ export default function Navbar() {
             </Magnetic>
 
             <Magnetic>
-                <button aria-label="Scroll-to-Work" className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[15px] md:py-1 md:px-4" onClick={() => scrollToSection("project")}>
+                <button aria-label="Scroll-to-Work" className="rounded py-1 px-2 sm:px-4 text-[12px] sm:text-[15px] md:px-4 cursor-none" onClick={() => scrollToSection("project")}>
                     <h3>
                         Work
                     </h3>
@@ -46,7 +46,7 @@ export default function Navbar() {
             </Magnetic>
 
             <Magnetic>
-                <button aria-label="Scroll-to-About" className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[15px] md:py-1 md:px-4" onClick={() => scrollToSection("about")}>
+                <button aria-label="Scroll-to-About" className="rounded py-1 px-2 sm:px-4 text-[12px] sm:text-[15px] md:px-4 cursor-none" onClick={() => scrollToSection("about")}>
                     <h3>
                         About
                     </h3>
@@ -54,7 +54,7 @@ export default function Navbar() {
             </Magnetic>
 
             <Magnetic>
-                <button aria-label="Scroll-to-Contact" className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[15px] md:py-1 md:px-4" onClick={() => scrollToSection("contact")}>
+                <button aria-label="Scroll-to-Contact" className="rounded py-1 px-2 sm:px-4 text-[12px] sm:text-[15px] md:px-4 cursor-none" onClick={() => scrollToSection("contact")}>
                     <h3>
                         Contact
                     </h3>

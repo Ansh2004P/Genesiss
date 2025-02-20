@@ -5,7 +5,7 @@ import HeadingComponent from "@/components/UI/HeroArea/Navbar/HeadingComponent";
 
 export function HeroSection() {
     return (
-        <section id="hero" className="relative flex flex-col items-center justify-between w-screen h-screen z-10">
+        <section id="hero" className="relative flex flex-col items-center justify-between w-screen h-[90vh] md:h-screen z-10">
             <HeadingComponent />
             <HeroArea />
             <Brief />

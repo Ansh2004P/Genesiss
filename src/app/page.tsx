@@ -4,6 +4,7 @@ import ProjectSection from "./(Sections)/Project/ProjectSection";
 import AboutSection from "./(Sections)/About/AboutSection";
 import ContactSection from "./(Sections)/Contact/ContactSection";
 import Navbar from "@/components/UI/Navigation/Navbar";
+import Footer from "./(Sections)/Footer/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
         <AboutSection />
         <ContactSection />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </CursorWrapper>
   );
 }

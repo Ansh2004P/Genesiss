@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 function HeroArea() {
     return (
-        <div className="relative flex flex-col items-center justify-between w-full h-screen z-10 ">
+        <div className="relative flex flex-col items-center justify-between w-full h-screen z-10 md:mt-12 lg:mt-0 mt-20">
 
             {/* Container for name and image */}
             <div className="flex flex-col items-center justify-center relative top-[8%]">
@@ -26,7 +26,7 @@ function HeroArea() {
                                     bounce: 0.5
                                 },
                             }}
-                            className="text-[6em] lg:text-[8em] xl:text-[10em] text-AAprimary font-[900] font-MonaSans text-center leading-[0.85]"
+                            className="text-[4rem] sm:text-[6em] lg:text-[8em] text-AAprimary font-[900] font-MonaSans text-center leading-[0.85]"
                         >
                             ANSH
                         </motion.h1>
@@ -47,7 +47,7 @@ function HeroArea() {
                                     bounce: 0.5
                                 },
                             }}
-                            className="text-[8rem] lg:text-[12rem] xl:text-[16rem] text-AAprimary font-[900] font-MonaSans text-center leading-[0.85]"
+                            className="text-[6rem] sm:text-[8rem] lg:text-[12rem] text-AAprimary font-[900] font-MonaSans text-center leading-[0.85]"
                         >
                             PATEL
                         </motion.h1>
@@ -79,7 +79,7 @@ function HeroArea() {
                                     alt="Profile Picture"
                                     width={200}
                                     height={200}
-                                    className="rounded-2xl object-cover filter grayscale transition-all duration-500 hover:filter-none w-[150px] h-[150px] sm:w-[170px] sm:h-[170px] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px]"
+                                    className="rounded-2xl object-cover filter grayscale transition-all duration-500 hover:filter-none w-[150px] h-[150px] sm:w-[170px] sm:h-[170px] lg:w-[200px] lg:h-[200px] "
                                     priority
                                 />
                             </motion.div>
