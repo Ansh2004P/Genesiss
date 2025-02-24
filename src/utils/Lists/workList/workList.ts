@@ -37,7 +37,7 @@ export const workList: Props[] = [
         title: "InstaBurger",
         description: "A Food Ordering Application ",
         techStack: ["ReactJs", "Redux Toolkit", "Javascript"],
-        img: "/images/Work/InstaBurger.PNG",
+        img: "/images/Work/InstaBurger.png",
         liveLink: "https://insta-burger.vercel.app/",
         githubLink: "https://github.com/Ansh2004P/Insta-Burger"
     },
@@ -53,7 +53,7 @@ export const workList: Props[] = [
         title: "Apoorv App",
         description: "A Flutter Application for a centralizing the managment of TechFest 24'.",
         techStack: ["Flutter", "Firebase", "Dart"],
-        img: "/images/Work/Apoorv_App.PNG",
+        img: "/images/Work/Apoorv_App.png",
         githubLink: "https://github.com/siddharthO3/Apoorv-App",
         liveLink: "https://linktr.ee/apoorv2024?lt_utm_source=lt_share_link#373301105"
     }
