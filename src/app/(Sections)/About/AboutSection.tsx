@@ -8,7 +8,7 @@ import Skills from '@/components/UI/Skills/skills';
 
 function AboutSection() {
     return (
-        <section id="about" className='relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56 font-syne'>
+        <section id="about" className='relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 lg:pt-20 font-syne'>
             <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
                 <h2
                     aria-label="I DESIGN EXPERIENCES, DEVELOP SOLUTIONS, AND ENGINEER INNOVATION."

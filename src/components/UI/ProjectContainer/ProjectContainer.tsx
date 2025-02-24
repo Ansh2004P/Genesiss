@@ -32,13 +32,14 @@ function ProjectContainer({ index, title, description, techStack, img, githubLin
 
                 {/* Text Content */}
                 <AnimatedText className='flex flex-col items-start gap-y-4 md:gap-y-6 w-full sm:mt-0 mt-12'>
-                    <h1 className="text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold whitespace-nowrap w-auto sm:w-[80%] min-w-0 leading-tight">
+                    <h1 className="text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold whitespace-normal sm:whitespace-nowrap w-auto sm:w-[80%] min-w-0 leading-tight">
                         {title}
                     </h1>
 
                     <p className='text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-descriptionColor w-full md:w-[85%]'>
                         {description}
                     </p>
+
                     <div className='flex flex-wrap gap-2 sm:gap-3 md:gap-4 lg:gap-6 w-full'>
                         {techStack.map((tech) => (
                             <span key={`${title}-${tech}`} className='text-sm sm:text-lg md:text-xl font-semibold pr-6 py-1 rounded-lg'>
@@ -47,6 +48,7 @@ function ProjectContainer({ index, title, description, techStack, img, githubLin
                         ))}
                     </div>
                 </AnimatedText>
+
             </div>
 
             {/* Image Section */}

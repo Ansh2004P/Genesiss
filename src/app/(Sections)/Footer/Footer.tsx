@@ -7,16 +7,18 @@ const Footer: React.FC = () => {
         <p
           aria-label="Copyright 2023"
           role="heading"
+          aria-level={1}
           className="m-0 p-0"
           aria-hidden="true"
           style={{ opacity: 1, transform: "translateY(0em) translateZ(0px)" }}
         >
-          Copyright 2023
+          Copyright 2025
         </p>
         <div className="flex flex-col sm:flex-row sm:gap-1 md:gap-2">
           <p
             aria-label="Design & Development by"
             role="heading"
+            aria-level={1}
             className="m-0 p-0"
             aria-hidden="true"
             style={{ opacity: 1, transform: "translateY(0em) translateZ(0px)" }}
@@ -33,11 +35,12 @@ const Footer: React.FC = () => {
               <p
                 aria-label="Ansh Patel"
                 role="heading"
+                aria-level={1}
                 className="m-0 p-0"
                 aria-hidden="true"
                 style={{ opacity: 1, transform: "translateY(0em) translateZ(0px)" }}
               >
-              Ansh Patel
+                Ansh Patel
               </p>
             </span>
           </a>

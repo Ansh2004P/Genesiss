@@ -11,7 +11,8 @@ export default function AboutAnimation({ word, wordIndex, doDelay = true, dur = 
                 aria-hidden="true"
                 className="inline-block mr-[0.001em]"
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0, skewY: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{
                     duration: dur,
                     delay: doDelay ? wordIndex * 0.2 + charIndex * 0.05 : 0,
