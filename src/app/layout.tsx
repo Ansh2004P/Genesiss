@@ -6,8 +6,9 @@ import StartupClient from "@/components/Header/Startup/StartupClient/StartupClie
 const inter = Inter({ subsets: ["greek", "latin-ext"] });
 
 export const metadata: Metadata = {
-  title: "Your App Name",
-  description: "Your app description",
+  title: "Ansh Patel Full Stack Developer",
+  description: "Welcome to my Portfolio, I am a Full Stack Developer with a passion for building web applications.",
+  icons: "👩🏻‍🍳",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
