@@ -61,6 +61,7 @@ function ProjectContainer({ index, title, description, techStack, img, githubLin
                         style={{ objectFit: "contain" }}
                         className={`object-cover 
                         ${index % 2 === 0 ? 'md:rounded-r-[2.5rem]' : 'md:rounded-l-[2.5rem]'}`}
+                        unoptimized
                     />
                 </div>
             )}
