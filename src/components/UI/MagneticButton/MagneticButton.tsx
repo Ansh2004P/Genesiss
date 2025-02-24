@@ -6,11 +6,11 @@ import DelayedAnimationWrapper from '@/components/Animation/DelayAnimationWrappe
 
 function MagneticButton({ styles, ariaLabel, link, content }: { styles: string, ariaLabel: string, link: string, content: string }) {
     return (
-        <DelayedAnimationWrapper useDefaultTransition={false}>
+        <DelayedAnimationWrapper useDefaultTransition={false} >
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? 0 : 2, duration: 0.6, ease: "easeOut" }}
+                transition={{ delay: process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? 0 : 1, duration: 0.6, ease: "easeOut" }}
             >
                 <Magnetic>
                     <button className={styles}>

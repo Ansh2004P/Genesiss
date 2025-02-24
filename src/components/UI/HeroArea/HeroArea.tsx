@@ -14,14 +14,14 @@ function HeroArea() {
 
                 {/* First Name Animation */}
                 <div className='overflow-hidden'>
-                    <DelayedAnimationWrapper useDefaultTransition={false}>
+                    <DelayedAnimationWrapper useDefaultTransition={false} delay={0}>
                         <motion.h1
                             initial={{ y: "100%", opacity: 1 }}
                             animate={{
                                 y: 0,
                                 opacity: 1,
                                 transition: {
-                                    delay: process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? 0 : 3,
+                                    delay: process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? 0 : 1.5,
                                     duration: 0.6,
                                     bounce: 0.5
                                 },
@@ -42,7 +42,7 @@ function HeroArea() {
                                 y: 0,
                                 opacity: 1,
                                 transition: {
-                                    delay: process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? 0 : 3,
+                                    delay: process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? 0 : 1.5,
                                     duration: 0.6,
                                     bounce: 0.5
                                 },
@@ -56,7 +56,7 @@ function HeroArea() {
 
                 {/* Profile Picture - Now positioned absolutely over the text */}
                 <div className="absolute top-[60%] bottom-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-                    <DelayedAnimationWrapper useDefaultTransition={false}>
+                    <DelayedAnimationWrapper useDefaultTransition={false} >
                         <Magnetic>
                             <motion.div
                                 initial={{ y: "20%", opacity: 0, scale: 0.5 }}
@@ -65,7 +65,7 @@ function HeroArea() {
                                     scale: 1,
                                     opacity: 1,
                                     transition: {
-                                        delay: process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? 0 : 3.2,
+                                        delay: process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? 0 : 1.8,
                                         duration: 0.6,
                                         bounce: 0.5,
                                         ease: "easeInOut",

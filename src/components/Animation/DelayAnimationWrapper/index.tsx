@@ -9,7 +9,7 @@ interface DelayedAnimationWrapperProps {
 
 export default function DelayedAnimationWrapper({
     useDefaultTransition = true,
-    delay = 3200,
+    delay = 0,
     children,
 }: DelayedAnimationWrapperProps) {
     const isDev = process.env.NODE_ENV === "production";
