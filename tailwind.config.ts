@@ -63,10 +63,10 @@ export default {
         "5xl": "3840px",
       },
     },
+    variants: {
+      scrollbar: ["rounded"],
+    },
   },
   plugins: [tailwindScrollbar({ nocompatible: true }),
     tailwindScrollbarHide,],
-  variants: {
-    scrollbar: ["rounded"],
-  },
 } satisfies Config;
