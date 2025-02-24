@@ -4,6 +4,10 @@
 import React, { ReactNode, CSSProperties } from "react";
 import { motion } from "framer-motion";
 
+interface CustomReactElement extends React.ReactElement {
+    _owner?: { name?: string };
+}
+
 interface AnimatedTextProps {
     children: ReactNode;
     animationClassName?: string; // Class for animation effects
@@ -55,11 +59,10 @@ export default function AnimatedText({
                         </motion.h1>)
                         : (
                             <motion.div
-                                className={animationClassName}
                                 initial={{
                                     opacity: 0,
                                     y: 20,
-                                    skewY: React.isValidElement(child) && (child as any)._owner?.name === "AboutSection" ? 0 : 4
+                                    skewY: React.isValidElement(child) && ((child as CustomReactElement)._owner?.name === "AboutSection") ? 0 : 4
                                 }}
                                 whileInView={{ opacity: 1, y: 0, skewY: 0 }}
                                 transition={{ duration: 1, y: 0, delay: index * 0.1, ease: "easeOut" }}
