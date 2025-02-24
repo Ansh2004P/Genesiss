@@ -25,7 +25,7 @@ export default function AnimatedText({
                 // console.log(child._owner);
                 return typeof child === "string" ? (
                     <motion.span
-                        className={animationClassName} 
+                        className={animationClassName}
                         initial={{ opacity: 0, y: 20, skewY: 4 }}
                         transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                         whileInView={{ opacity: 1, y: 0, skewY: 0 }}
@@ -56,7 +56,11 @@ export default function AnimatedText({
                         : (
                             <motion.div
                                 className={animationClassName}
-                                initial={{ opacity: 0, y: 20, skewY: child!._owner.name === "AboutSection" ? 0 : 4 }}
+                                initial={{
+                                    opacity: 0,
+                                    y: 20,
+                                    skewY: React.isValidElement(child) && (child as any)._owner?.name === "AboutSection" ? 0 : 4
+                                }}
                                 whileInView={{ opacity: 1, y: 0, skewY: 0 }}
                                 transition={{ duration: 1, y: 0, delay: index * 0.1, ease: "easeOut" }}
                                 viewport={{ once: true }}
